@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/recyclerview_bg"
+    tools:context=".MovieDetailsFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Movie Details"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/movie"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="40dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Title:"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="25dp"
+                android:id="@+id/labeltitle"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:text="Title"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="25dp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/title"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="180dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Description:"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="180dp"
+                android:id="@+id/labeldesc"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <TextView
+                android:text="Desc"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="180dp"
+                android:id="@+id/description"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="40dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Director:"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="25dp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/labeldirector"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:text="director"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="25dp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/director"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="40dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Original Title:"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="25dp"
+                android:id="@+id/labeloriginaltitle"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:text="original title"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="25dp"
+                android:id="@+id/original_title"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="40dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Romanised Title:"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="40dp"
+                android:id="@+id/labelromantitle"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:text="Roman title"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:textColor="@color/colorWhite"
+                android:layout_height="25dp"
+                android:id="@+id/original_title_romanised"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="40dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Producer:"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="25dp"
+                android:id="@+id/labelproducer"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp"/>
+            <TextView
+                android:text="producer"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="25dp"
+                android:id="@+id/producer"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="40dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Release Date:"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:textColor="@color/colorWhite"
+                android:layout_height="25dp"
+                android:id="@+id/labelrelease"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:text="release"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="25dp"
+                android:id="@+id/releasedate"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="40dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Running Time:"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="25dp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/labelrunningtime"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:text="running time"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="25dp"
+                android:id="@+id/runningtime"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="40dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Rt Score:"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="25dp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/labelscore"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:text="rt score"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="25dp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/rtscore"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="40dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Url:"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="25dp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/labelurl"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:text="url"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="25dp"
+                android:id="@+id/url"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minWidth="2dp"
+                android:minHeight="2dp"
+                android:text="View List" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
