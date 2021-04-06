@@ -100,7 +100,7 @@
             android:layout_height="40dp"
             android:layout_width="match_parent">
             <TextView
-                android:text="Original Title:"
+                android:text="Origin Title:"
                 android:layout_width="0dp"
                 android:layout_weight="30"
                 android:layout_height="25dp"
@@ -123,7 +123,7 @@
             android:layout_height="40dp"
             android:layout_width="match_parent">
             <TextView
-                android:text="Romanised Title:"
+                android:text="Roman Title:"
                 android:layout_width="0dp"
                 android:layout_weight="30"
                 android:layout_height="40dp"
